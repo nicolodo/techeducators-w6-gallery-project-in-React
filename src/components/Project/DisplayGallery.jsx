@@ -42,6 +42,7 @@ export default function DisplayGallery() {
                 <img 
                     onClick={()=>setCurrentImageId(index)} 
                     key={image.id} src={image.url} 
+                    id={index}
                     alt={image.alt} tabIndex={0}
                     onKeyDown={()=>spaceKeySelector}/>))}
             </div>
