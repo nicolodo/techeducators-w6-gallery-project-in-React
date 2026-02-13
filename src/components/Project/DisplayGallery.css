@@ -1,0 +1,13 @@
+
+.ImageDiv{
+    display: flex;
+    flex-flow: row nowrap;
+    height: 20vh;
+    /* width: 100vh; */
+    /* overflow: scroll; */
+    overflow-x: scroll;
+}
+
+.ImageDiv img{
+    height: 10;
+}

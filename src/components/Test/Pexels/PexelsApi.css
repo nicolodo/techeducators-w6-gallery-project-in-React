@@ -1,0 +1,14 @@
+
+.pexelsLogos {
+    background-color: violet;
+    max-width: 30%;
+    /* display: flex; */
+    /* flex: 1; */
+    /* flex-flow: column wrap; */
+}
+
+.pexelsLogos img{
+    width: 100%;
+}
+
+
