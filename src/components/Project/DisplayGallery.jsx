@@ -35,9 +35,10 @@ export default function DisplayGallery() {
     }, []);
 
     return(
-        <div className="ProjectItem">
+        <div className="ProjectItem" >
             <h3>Project Item</h3>
-            <div className="ImageDiv">
+            <p>press enter to select your frog</p>
+            <div className="ImageDiv" >
             {Gallery.map((image, index) => (
                 <img 
                     onClick={()=>setCurrentImageId(index)} 
@@ -48,8 +49,8 @@ export default function DisplayGallery() {
                     onKeyDown={spaceKeySelector}
                 />))}
             </div>
-            <img 
-                src={Gallery[currentImageId]?.url}
+            <img //I think ? is a check if Gallery[currentImageId] exists
+                src={Gallery[currentImageId]?.url} //lookup what this ? does
                 alt="test" />
         </div>
     );
