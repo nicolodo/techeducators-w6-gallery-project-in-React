@@ -44,7 +44,9 @@ export default function DisplayGallery() {
                     key={image.id} src={image.url} 
                     id={index}
                     alt={image.alt} tabIndex={0}
-                    onKeyDown={()=>spaceKeySelector}/>))}
+                    // onKeydown={()=>spaceKeySelector()}
+                    onKeyDown={spaceKeySelector}
+                />))}
             </div>
             <img 
                 src={Gallery[currentImageId]?.url}
