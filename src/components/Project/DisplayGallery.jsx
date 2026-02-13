@@ -8,10 +8,14 @@ export default function DisplayGallery() {
     const [currentImageId, setCurrentImageId] = useState(0);
 
     function spaceKeySelector(event) {
-        if (event.key == 'Enter') {
-            console.log(event.key)
-            console.log(currentImageId)
-            setGallery(currentImageId);
+        // console.log("event")
+        console.log(event.key)
+        if (event.key == 'Enter') { //== or === works
+            console.log(event.target)
+            console.log("img id: ", event.target.id)
+            setCurrentImageId(event.target.id)
+            console.log("currentImageId:",currentImageId)
+            // setGallery(currentImageId);
         }
     }
 
@@ -39,7 +43,7 @@ export default function DisplayGallery() {
             <h3>Project Item</h3>
             <p>press enter to select your frog</p>
             <div className="ImageDiv" >
-            {Gallery.map((image, index) => (
+                {Gallery.map((image, index) => (
                 <img 
                     onClick={()=>setCurrentImageId(index)} 
                     key={image.id} src={image.url} 
@@ -51,7 +55,7 @@ export default function DisplayGallery() {
             </div>
             <img //I think ? is a check if Gallery[currentImageId] exists
                 src={Gallery[currentImageId]?.url} //lookup what this ? does
-                alt="test" />
+                alt="test" />   
         </div>
     );
     
