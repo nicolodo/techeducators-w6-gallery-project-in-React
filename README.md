@@ -46,7 +46,10 @@ Requesting feedback about a specific part of your submission.
 What useful external sources helped you complete the assignment (e.g Youtube tutorials)?
     N:I w3 schools and went back through the demo code for week 3
 What errors or bugs did you encounter while completing your assignment? How did you solve them?
-    N:
+    N:I'm not sure how the onclick image changing now works the code looks 
+    near identical to when it wasn't working, the main thing is now 
+    spaceKeySelector is not passed inside an anonymous function but
+    I don't see why that fixes it.
 What went really well and what could have gone better?
 Submission Instructions
 Please submit your Render deployment URL and your GitHub repository URL.
